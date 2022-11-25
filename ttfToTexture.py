@@ -23,9 +23,8 @@ def makeTriangleStrips_file(in_dir, out_dir):
     for ttfFile in findAllFiles(in_dir):
         if ttfFile[-3:] == "ttf":
             fpath = ospath.join(in_dir, ttfFile)
-            # subprocess.run([prog,"-t", fpath, in_dir,"\\0-\\4096"])
             subprocess.run([prog,"-t", fpath, in_dir,"\\21414"])
-            # subprocess.run([prog,"-t", fpath, in_dir, "a-z","A-Z"])
+            # subprocess.run([prog,"-t", fpath, in_dir,"\\0-\\4096"])
             # subprocess.run([prog,"-t", fpath, in_dir, "a-z","A-Z"])
         else:
             print("unknown input file format: " + ttfFile)
@@ -271,13 +270,12 @@ def makeStripforTBVS(markerName, rawTriangles, rawStrips):
 # ##################################################
 # ##################################################
 
-workSpace_path = "/Users/soku/Desktop/VTexture Toolchain"
+workSpace_path = "/rootPath"
 
 prog = workSpace_path + "/build/bin/Debug/vtexture"
-inDir= workSpace_path + "/sokuTest/input"
-mediumDir = workSpace_path + "/sokuTest/medium/"
-outDir = workSpace_path + "/sokuTest/output/"
-outDir = "/Users/soku/Desktop/GeoScratch/Web/geoscratch_on_vue/public/"
+inDir= workSpace_path + "/resource/input"
+mediumDir = workSpace_path + "/resource/medium/"
+outDir = workSpace_path + "/resource/output/"
 
 
 # ##################################################
@@ -353,7 +351,4 @@ outFile = open(outDir + "json/tbvs.json", "w")
 
 print(json.dumps(outJson))
 json.dump(outJson, outFile, sort_keys=True)
-
-# shutil.rmtree(mediumDir)
-# os.mkdir(mediumDir)
 

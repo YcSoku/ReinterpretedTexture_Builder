@@ -1,10 +1,10 @@
 # ReinterpretedTexture_Builder
-A texture builder for the web prototype system about a vector point symbol rendering method based on the texture structure. It can transfer TrueType or SVG symbols to textures, which can be used as the rendering data used in the [prototype system based on reinterpreted textures](https://github.com/YcSoku/ReinterpretedTexture_Rendering).
+A texture builder for the [web prototype system](https://github.com/YcSoku/ReinterpretedTexture_Rendering) about a vector point symbol rendering method based on the texture structure. It can transfer TrueType or SVG symbols to reinterpreted textures.
 
 This builder is developed by C++ and Python. The C++ program (vtexture) need to be built before using Python codes.
 
 
-# Building vtexture program
+# Building vtexture
 (Cmake version >= 3.15)
 
 ```

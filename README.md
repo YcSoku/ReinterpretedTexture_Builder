@@ -10,6 +10,6 @@ cd ReinterpretedTexture_Builder
 mkdir build
 cd build
 
-cmake ..
+cmake -DCMAKE_BUILD_TYPE=Debug ..
 build
 ```

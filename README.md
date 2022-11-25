@@ -6,4 +6,10 @@ A texture builder for the web prototype system about a vector point symbol rende
 
 ```
 cd ReinterpretedTexture_Builder
+
+mkdir build
+cd build
+
+cmake ..
+build
 ```
